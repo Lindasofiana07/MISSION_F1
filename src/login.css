@@ -2,20 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   margin: 0;
-  padding: 336;
+  padding: 0;
   box-sizing: border-box;
   font-family: "lato", sans-serif;
 }
 
 @media (max-width: 500px) {
   .container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
 .chilllogo {
   width: 94px;
-  height: 30px; 
+  height: 30px;
 }
 
 label {
@@ -43,6 +45,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
